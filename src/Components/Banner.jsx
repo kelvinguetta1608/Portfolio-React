@@ -20,7 +20,7 @@ const Banner = () => {
     }, []);
 
     return (
-        <div className="text-center pt-10 lg:w-[100%]">
+        <div id="Home" className="text-center pt-10 lg:w-[100%]">
             <h2 className="text-xl">Hello, I am</h2>
             <h2 className="text-5xl my-2 font-bold" style={{ color: '#1484da' }}>Kevin Velasco</h2>
             <div className="text-2xl my-2 font-bold" id="typewriter"></div>
