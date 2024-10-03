@@ -29,17 +29,7 @@ const Menu =()=>{
 
                     <IoPerson className="text-[26px] m-[10px] text-center"/>
                 </Link>
-                <Link activeClass="bg=[#1484da] rounded-full" 
-                    to="Projects"
-                    smooth={true}
-                    spy={true}
-                    offset={50}
-                    duration={500}
-
-                >
-
-                    <IoBagSharp className="text-[26px] m-[10px] text-center"/>
-                </Link>
+                
                 <Link activeClass="bg=[#1484da] rounded-full" 
                     to="Skills"
                     smooth={true}
@@ -51,6 +41,19 @@ const Menu =()=>{
 
                     <BsLightbulbFill className="text-[26px] m-[10px] text-center"/>
                 </Link>
+
+                <Link activeClass="bg=[#1484da] rounded-full" 
+                    to="Projects"
+                    smooth={true}
+                    spy={true}
+                    offset={50}
+                    duration={500}
+
+                >
+
+                    <IoBagSharp className="text-[26px] m-[10px] text-center"/>
+                </Link>
+
                 <Link activeClass="bg=[#1484da] rounded-full" 
                     to="Contact"
                     smooth={true}

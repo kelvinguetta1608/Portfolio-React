@@ -18,8 +18,8 @@ function App() {
       <Header/>
       <Banner/>
       <About/>
-      <Projects/>
       <Skills/>
+      <Projects/>
       <Contact/>
       <Footer/>
       <Menu/>
