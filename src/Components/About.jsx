@@ -2,12 +2,36 @@ import profile from '../assets/Captura2.png'
 import { FaUnity } from "react-icons/fa6";
 import { SiAdobe } from "react-icons/si";
 import { TfiHtml5 } from "react-icons/tfi";
+import { ScrollTrigger } from 'gsap/all';
+import gsap from 'gsap';
+import React, { useLayoutEffect, useRef } from 'react';
 
 const About =()=>{
+
+    const comp =useRef(null);
+    gsap.registerPlugin(ScrollTrigger);
+
+    useLayoutEffect(()=>{
+
+        let ctx =gsap.context(()=>{
+            const t1=gsap.timeline({
+                scrollTrigger:{
+                    trigger: '#intro-slider',
+                    start: 'top center',
+                    end: 'bottom center',
+                    scrub:1,
+                },
+            });
+            t1.from("#intro-slider", { opacity:0,x:-100, duration:1});
+            return t1;
+        },comp)
+        return ()=> ctx.revert();
+    },[])
+
     return(
-        <div id="About" className='py-28 lg:px-44 px-[20px] text-white'>
+        <div ref={comp}  id="About" className='py-28 lg:px-44 px-[20px] text-white'>
             <h2 className='text-4xl text-white font-bold mb-10 text-center'>About Me</h2>
-            <div className='flex lg:flex-row flex-col lg:items-start items-center justify-center gap-36'>
+            <div id='intro-slider' className='flex lg:flex-row flex-col lg:items-start items-center justify-center gap-36'>
                 <img className='lg:h-[30%] lg:w-[30%] rounded-xl mb-9' src={profile} alt="" />
                 <div >
                     <div className='flex lg:justify-start justify-center gap-[20px] mb-[40px]'>
