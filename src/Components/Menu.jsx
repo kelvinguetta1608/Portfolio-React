@@ -5,8 +5,9 @@ import { BiSolidMessageAltDetail } from "react-icons/bi";
 
 const Menu =()=>{
     return(
-        <div className="flex justify-center flex-col items-center">
-            <div className="flex gap-4 bg-gray-600 backdrop-blur-sm bg-opacity-40 py-2 px-8 rounded-md fixed backdrop-filter bg-clip-padding bottom-10">
+        <div className="flex justify-center flex-col items-center px-2">
+            <div className="bg-gray-600 z-40 rounded-md m-[3px] flex gap-2
+         bottom-10 py-2 px-8 bg-clip-padding backdrop-filter backdrop-blur-sm bg-opacity-40 fixed">
                 <Link activeClass="bg=[#1484da] rounded-full" 
                     to="Home"
                     smooth={true}
