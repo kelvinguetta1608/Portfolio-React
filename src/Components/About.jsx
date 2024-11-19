@@ -37,17 +37,17 @@ const About =()=>{
                     <div className='flex lg:justify-start justify-center gap-[20px] mb-[40px]'>
                         <div className='bg-gray-900 p-[10px] rounded-xl flex flex-col items-center justify-center'>
                             <FaUnity className='text-[20px] text-center m-[6px]'/>
-                            <h2 className='text-[17px] font-bold text-[#1484da]'>Expirerience</h2>
+                            <h2 className='text-[17px] font-bold text-[#1484da]'>Experience</h2>
                             <span className='py-[1px] text-[16px] '>Unity Developer</span>
                         </div>
                         <div className='bg-gray-900 p-[10px] rounded-xl flex flex-col items-center justify-center'>
                             <TfiHtml5 className='text-[20px] text-center m-[6px]'/>
-                            <h2 className='text-[17px] font-bold text-[#1484da]'>Expirerience</h2>
+                            <h2 className='text-[17px] font-bold text-[#1484da]'>Experience</h2>
                             <span className='py-[1px] text-[16px] '>Web Developer</span>
                         </div>
                         <div className='bg-gray-900 p-[10px] rounded-xl flex flex-col items-center justify-center'>
                             <SiAdobe className='text-[20px] text-center m-[6px]'/>
-                            <h2 className='text-[17px] font-bold text-[#1484da]'>Expirerience</h2>
+                            <h2 className='text-[17px] font-bold text-[#1484da]'>Experience</h2>
                             <span className='py-[1px] text-[16px] '>Adobe suite</span>
                         </div>
                     </div>

@@ -75,7 +75,7 @@ const Banner = () => {
                 <a href="https://www.linkedin.com/in/kevin-velasco-91a759295/?trk=opento_sprofile_details" target="_blank">
                     <FaLinkedinIn className="bg-gray-900 p-6px text-3xl rounded"/>
                 </a>
-                <a href="https://kevinvelasco.itch.io/" target="_blank">
+                <a href="https://itch.io/profile/kevinvelasco" target="_blank">
                     <FaItchIo className="bg-gray-900 p-6px text-3xl rounded"/>
                 </a>
                 </div>

@@ -1,81 +1,104 @@
 import { useState } from 'react';
-import profile from '../assets/project1.png';
-import profile1 from '../assets/project2.png';
-import profile2 from '../assets/Project3.png';
-import profile7 from '../assets/Portfolio.png';
-import profile3 from '../assets/clase8.png';
-import profile4 from '../assets/clasevirtual.png';
+import { Link } from 'react-router-dom';
+import profile from '../assets/StormInTheKitchen.png';
+import profile1 from '../assets/Drift.png';
+import profile2 from '../assets/Blossoms.png';
+import profile7 from '../assets/Home.png';
+import profile3 from '../assets/Amuleto.png';
+import profile4 from '../assets/Diseño.png';
 import profile5 from '../assets/contador.png';
 import profile6 from '../assets/videoreact.png';
+import profile8 from '../assets/Portfolio.png';
 
 const Projects = () => {
   const [activeTab, setActiveTab] = useState(0);
 
   const tabData = [
     {
-      label: 'Proyectos Corte 1',
+      label: 'Game Jams',
       content: (
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-24">
           <Card
-            subtitle="PROJECT 1"
+            subtitle="Storm In The Kitchen"
             href={profile}
-            link="https://github.com/kelvinguetta1608/Clase2Web"
+            link="/StormKitchen"  // Ruta interna a StormKitchen
           />
           <Card
-            subtitle="PROJECT 2"
+            subtitle="Drift Up"
             href={profile1}
-            link="https://github.com/kelvinguetta1608/Ejercicio-Web"
+            link="/DriftUp" 
           />
           <Card
-            subtitle="PROJECT 3"
+            subtitle="Blossoms of Peace"
             href={profile2}
-            link="https://github.com/edwinmgallego/clase-practica-css-jueves/tree/main/KevinVelasco2215376"
+            link="/BlossomsOfPeace"
           />
-          <Card
-            subtitle="PROJECT 4"
-            href={profile7}
-            link="https://github.com/kelvinguetta1608/Parcial"
-          />
+          
         </div>
-        
       ),
     },
     {
-      label: 'Proyectos Corte 2',
-      content: (
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
-            <Card
-            subtitle="Clase Virtual"
-            href={profile4}
-            link="https://github.com/kelvinguetta1608/EjercicioClase8"
+      label: 'Interactive Experiences',
+content: (
+  
+    
+    
+      
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-24">
+        <Card
+          subtitle="UAO Vision Home"
+          href={profile7}
+          link="/Home"
+          className="w-full md:w-80 h-auto"
+        />
+        <Card
+          subtitle="Amuleto de Jade"
+          href={profile3}
+          link="/Amuleto"
+          className="w-full md:w-80 h-auto"
+        />
+        <Card
+            subtitle="Calvo Duty"
+            href={profile2}
+            link="/BlossomsOfPeace"
           />
-          <Card
-            subtitle="Comparador "
-            href={profile3}
-            link="https://github.com/kelvinguetta1608/Clase-Virtual"
-          />
-          
-          <Card
-            subtitle="Contador"
-            href={profile5}
-            link="https://github.com/kelvinguetta1608/Contador"
-          />
-          <Card
-            subtitle="React"
-            href={profile6}
-            link="https://github.com/kelvinguetta1608/Youtube-React"
-          />
-        </div>
-      ),
+      </div>
+    
+
+    
+  
+),
+
+
+    },
+    {
+      label: 'Digital Creation & Web',
+content: (
+  <div className="max-w-3xl mx-auto p-2">  {/* Reducimos el ancho del contenedor */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <Card
+        subtitle="Simple Web Portfolio"
+        href={profile8}
+        link="https://github.com/kelvinguetta1608/Parcial"
+        className="w-full md:w-80 h-auto"  // Ajusta el tamaño de la tarjeta
+      />
+      <Card
+        subtitle="Adobe Suite Design"
+        href={profile4}
+        link="https://www.behance.net/kevinvelasco5"
+        className="w-full md:w-80 h-auto"  // Ajusta el tamaño de la tarjeta
+      />
+    </div>
+  </div>
+  
+),
     },
   ];
 
   return (
     <div className="text-white bg-black lg:p-44 p-4" id="Projects">
-      {/* Título */}
       <h2 className="text-4xl text-white font-bold mb-10 text-center">Projects</h2>
       
-      {/* Pestañas */}
       <div className="flex justify-center space-x-4 mb-10">
         {tabData.map((tab, index) => (
           <button
@@ -89,7 +112,6 @@ const Projects = () => {
         ))}
       </div>
 
-      {/* Contenido de las Pestañas */}
       <div className="p-4 border-2 border-[#1484da] rounded-lg">
         {tabData[activeTab].content}
       </div>
@@ -99,16 +121,36 @@ const Projects = () => {
 
 // Componente Card
 const Card = ({ subtitle, href, link }) => {
+  const isExternalLink = link.startsWith('http'); // Verifica si el enlace es externo
+
+  const handleClick = () => {
+    if (!isExternalLink) {
+      // Si es un enlace interno, recarga la página
+      window.location.href = link;
+    }
+  };
+
   return (
-    <div className="bg-gray-900 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 transform hover:scale-105">
+    <div 
+      className="bg-gray-900 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 transform hover:scale-105 cursor-pointer" 
+      onClick={handleClick} // Maneja el clic en el card
+    >
       <div className="aspect-square">
-        <a href={link} target="_blank" rel="noopener noreferrer">
+        {isExternalLink ? (
+          <a href={link} target="_blank" rel="noopener noreferrer">
+            <img
+              src={href}
+              alt={subtitle}  // Asegúrate de que el texto sea descriptivo
+              className="w-full h-full object-cover transition-opacity duration-300 hover:opacity-80"
+            />
+          </a>
+        ) : (
           <img
             src={href}
-            alt={subtitle}
+            alt={subtitle}  // Asegúrate de que el texto sea descriptivo
             className="w-full h-full object-cover transition-opacity duration-300 hover:opacity-80"
           />
-        </a>
+        )}
       </div>
       <div className="p-4">
         <p className="text-[#1484da] font-bold text-center">{subtitle}</p>
@@ -118,4 +160,3 @@ const Card = ({ subtitle, href, link }) => {
 };
 
 export default Projects;
-
