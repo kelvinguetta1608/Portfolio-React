@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';  // Asegúrate de importar Link
 import profile from '../assets/StormInTheKitchen.png';
 import profile1 from '../assets/Drift.png';
 import profile2 from '../assets/Blossoms.png';
@@ -26,79 +26,67 @@ const Projects = () => {
           <Card
             subtitle="Drift Up"
             href={profile1}
-            link="/DriftUp" 
+            link="/DriftUp"
           />
           <Card
             subtitle="Blossoms of Peace"
             href={profile2}
             link="/BlossomsOfPeace"
           />
-          
         </div>
       ),
     },
     {
       label: 'Interactive Experiences',
-content: (
-  
-    
-    
-      
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-24">
-        <Card
-          subtitle="UAO Vision Home"
-          href={profile7}
-          link="/Home"
-          className="w-full md:w-80 h-auto"
-        />
-        <Card
-          subtitle="Amuleto de Jade"
-          href={profile3}
-          link="/Amuleto"
-          className="w-full md:w-80 h-auto"
-        />
-        <Card
+      content: (
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-24">
+          <Card
+            subtitle="UAO Vision Home"
+            href={profile7}
+            link="/Home"
+            className="w-full md:w-80 h-auto"
+          />
+          <Card
+            subtitle="Amuleto de Jade"
+            href={profile3}
+            link="/Amuleto"
+            className="w-full md:w-80 h-auto"
+          />
+          <Card
             subtitle="Calvo Duty"
             href={profile2}
             link="/BlossomsOfPeace"
           />
-      </div>
-    
-
-    
-  
-),
-
-
+        </div>
+      ),
     },
     {
       label: 'Digital Creation & Web',
-content: (
-  <div className="max-w-3xl mx-auto p-2">  {/* Reducimos el ancho del contenedor */}
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-      <Card
-        subtitle="Simple Web Portfolio"
-        href={profile8}
-        link="https://github.com/kelvinguetta1608/Parcial"
-        className="w-full md:w-80 h-auto"  // Ajusta el tamaño de la tarjeta
-      />
-      <Card
-        subtitle="Adobe Suite Design"
-        href={profile4}
-        link="https://www.behance.net/kevinvelasco5"
-        className="w-full md:w-80 h-auto"  // Ajusta el tamaño de la tarjeta
-      />
-    </div>
-  </div>
-  
-),
+      content: (
+        <div className="max-w-3xl mx-auto p-2">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <Card
+              subtitle="Simple Web Portfolio"
+              href={profile8}
+              link="https://github.com/kelvinguetta1608/Parcial"
+              className="w-full md:w-80 h-auto"
+            />
+            <Card
+              subtitle="Adobe Suite Design"
+              href={profile4}
+              link="https://www.behance.net/kevinvelasco5"
+              className="w-full md:w-80 h-auto"
+            />
+          </div>
+        </div>
+      ),
     },
   ];
 
   return (
     <div className="text-white bg-black lg:p-44 p-4" id="Projects">
       <h2 className="text-4xl text-white font-bold mb-10 text-center">Projects</h2>
-      
+
       <div className="flex justify-center space-x-4 mb-10">
         {tabData.map((tab, index) => (
           <button
@@ -123,33 +111,25 @@ content: (
 const Card = ({ subtitle, href, link }) => {
   const isExternalLink = link.startsWith('http'); // Verifica si el enlace es externo
 
-  const handleClick = () => {
-    if (!isExternalLink) {
-      // Si es un enlace interno, recarga la página
-      window.location.href = link;
-    }
-  };
-
   return (
-    <div 
-      className="bg-gray-900 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 transform hover:scale-105 cursor-pointer" 
-      onClick={handleClick} // Maneja el clic en el card
-    >
+    <div className="bg-gray-900 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 transform hover:scale-105 cursor-pointer">
       <div className="aspect-square">
         {isExternalLink ? (
           <a href={link} target="_blank" rel="noopener noreferrer">
             <img
               src={href}
-              alt={subtitle}  // Asegúrate de que el texto sea descriptivo
+              alt={subtitle}
               className="w-full h-full object-cover transition-opacity duration-300 hover:opacity-80"
             />
           </a>
         ) : (
-          <img
-            src={href}
-            alt={subtitle}  // Asegúrate de que el texto sea descriptivo
-            className="w-full h-full object-cover transition-opacity duration-300 hover:opacity-80"
-          />
+          <Link to={link}>
+            <img
+              src={href}
+              alt={subtitle}
+              className="w-full h-full object-cover transition-opacity duration-300 hover:opacity-80"
+            />
+          </Link>
         )}
       </div>
       <div className="p-4">
