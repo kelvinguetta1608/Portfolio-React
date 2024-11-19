@@ -1,0 +1,14 @@
+{
+    "headers": [
+      {
+        "source": "/build/(.*)\\.gz",
+        "headers": [
+          {
+            "key": "Content-Encoding",
+            "value": "gzip"
+          }
+        ]
+      }
+    ]
+  }
+  
