@@ -1,5 +1,5 @@
 import React from 'react';
-import gameplayVideo from '../assets/Amuleto.mp4'; // Asegúrate de que esta sea la ruta correcta del video
+import gameplayVideo from '../assets/RV.mp4'; // Asegúrate de que esta sea la ruta correcta del video
 
 const HomeDevelopment = () => {
     return (
