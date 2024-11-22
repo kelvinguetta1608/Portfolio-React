@@ -1,5 +1,5 @@
 import React from 'react';
-import gameplayVideo from '../assets/RV.mp4'; // Asegúrate de que esta sea la ruta correcta del video
+
 
 const HomeDevelopment = () => {
     return (
@@ -32,7 +32,7 @@ const HomeDevelopment = () => {
                         className="w-full h-[400px] rounded-xl shadow-lg"
                         controls
                     >
-                        <source src="/assets/RV.mp4" type="video/mp4" />
+                        <source src="/RV.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                 </div>

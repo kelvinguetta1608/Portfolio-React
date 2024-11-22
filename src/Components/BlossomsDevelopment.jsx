@@ -1,5 +1,5 @@
 import React from 'react';
-import gameplayVideo from '../assets/Gameplay2.mp4'; // Asegúrate de que esta sea la ruta correcta del video
+ // Asegúrate de que esta sea la ruta correcta del video
 
 const BlossomsDevelopment = () => {
     return (
@@ -29,7 +29,7 @@ const BlossomsDevelopment = () => {
                         className="w-full h-[400px] rounded-xl shadow-lg"
                         controls
                     >
-                        <source src={gameplayVideo} type="video/mp4" />
+                        <source src="/Gameplay2.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                 </div>
