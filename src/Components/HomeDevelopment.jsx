@@ -1,6 +1,15 @@
 import React from 'react';
+import YouTube from 'react-youtube';
 
 const HomeDevelopment = () => {
+    const opts = {
+        height: '400',
+        width: '100%',
+        playerVars: {
+            autoplay: 1,
+        },
+    };
+
     return (
         <div id="ProjectDevelopment" className="py-28 lg:px-44 px-4 text-white">
             <div className="flex lg:flex-row flex-col items-center justify-between gap-20">
@@ -27,17 +36,7 @@ const HomeDevelopment = () => {
 
                 {/* Video de YouTube a la derecha */}
                 <div className="lg:w-[50%] flex justify-center">
-                    <div className="w-full h-[400px] rounded-xl shadow-lg overflow-hidden">
-                        <iframe
-                            width="100%"
-                            height="100%"
-                            src="https://www.youtube.com/embed/6vPhcRew8hA"
-                            title="YouTube video player"
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen
-                        ></iframe>
-                    </div>
+                    <YouTube videoId="6vPhcRew8hA" opts={opts} />
                 </div>
             </div>
         </div>
