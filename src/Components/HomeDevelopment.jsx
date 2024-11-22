@@ -2,17 +2,11 @@ import React from 'react';
 import YouTube from 'react-youtube';
 
 const HomeDevelopment = () => {
-    const opts = {
-        height: '400',
-        width: '100%',
-        playerVars: {
-            autoplay: 1,
-        },
-    };
+    
 
     return (
         <div id="ProjectDevelopment" className="py-28 lg:px-44 px-4 text-white">
-            <div className="flex lg:flex-row flex-col items-center justify-between gap-20">
+            <div className="flex lg:flex-row flex-col items-center justify-center gap-20">
                 {/* Texto a la izquierda */}
                 <div className="lg:w-[50%]">
                     <div className="text-2xl font-semibold mb-4">
@@ -35,8 +29,10 @@ const HomeDevelopment = () => {
                 </div>
 
                 {/* Video de YouTube a la derecha */}
-                <div className="lg:w-[50%] flex justify-center">
-                    <YouTube videoId="g0aMwsNimZQ" opts={opts} />
+                <div className="lg:w-[50%] flex justify-center" >
+                    <div className="w-full h-full">
+                        <YouTube videoId="g0aMwsNimZQ"  />
+                    </div>
                 </div>
             </div>
         </div>
@@ -44,3 +40,5 @@ const HomeDevelopment = () => {
 };
 
 export default HomeDevelopment;
+
+

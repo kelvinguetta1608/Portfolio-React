@@ -1,10 +1,12 @@
 import React from 'react';
-
+import YouTube from 'react-youtube';
 
 const StormDevelopment = () => {
+    
+
     return (
         <div id="ProjectDevelopment" className="py-28 lg:px-44 px-4 text-white">
-            <div className="flex lg:flex-row flex-col items-center justify-between gap-20">
+            <div className="flex lg:flex-row flex-col items-center justify-center gap-20">
                 {/* Texto a la izquierda */}
                 <div className="lg:w-[50%]">
                     <div className="text-2xl font-semibold mb-4">
@@ -26,15 +28,11 @@ const StormDevelopment = () => {
                     </p>
                 </div>
 
-                {/* Video a la derecha */}
+                {/* Video de YouTube a la derecha */}
                 <div className="lg:w-[50%] flex justify-center">
-                    <video
-                        className="w-full h-[400px] rounded-xl shadow-lg"
-                        controls
-                    >
-                        <source src="/Gameplay1.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
+                    <div className="w-full h-full">
+                        <YouTube videoId="jC2i6Xgx6Y4"  />
+                    </div>
                 </div>
             </div>
         </div>
