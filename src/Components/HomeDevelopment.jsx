@@ -36,7 +36,7 @@ const HomeDevelopment = () => {
 
                 {/* Video de YouTube a la derecha */}
                 <div className="lg:w-[50%] flex justify-center">
-                    <YouTube videoId="6vPhcRew8hA" opts={opts} />
+                    <YouTube videoId="g0aMwsNimZQ" opts={opts} />
                 </div>
             </div>
         </div>
