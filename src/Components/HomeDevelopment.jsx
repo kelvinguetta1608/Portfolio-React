@@ -1,6 +1,5 @@
 import React from 'react';
 
-
 const HomeDevelopment = () => {
     return (
         <div id="ProjectDevelopment" className="py-28 lg:px-44 px-4 text-white">
@@ -26,15 +25,19 @@ const HomeDevelopment = () => {
                     </p>
                 </div>
 
-                {/* Video a la derecha */}
+                {/* Video de YouTube a la derecha */}
                 <div className="lg:w-[50%] flex justify-center">
-                    <video
-                        className="w-full h-[400px] rounded-xl shadow-lg"
-                        controls
-                    >
-                        <source src="/RV.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
+                    <div className="w-full h-[400px] rounded-xl shadow-lg overflow-hidden">
+                        <iframe
+                            width="100%"
+                            height="100%"
+                            src="https://www.youtube.com/watch?v=6vPhcRew8hA/<ID_DEL_VIDEO>"
+                            title="YouTube video player"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
                 </div>
             </div>
         </div>
