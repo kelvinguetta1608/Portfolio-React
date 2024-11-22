@@ -51,7 +51,7 @@ const Blossoms = () => {
       {/* Aquí está el iframe del juego de Unity */}
       <div className="w-full h-[70vh] flex justify-center items-center mt-10">
         <iframe
-          src="/Unity2/BlossomsOfPeace.html" // Ruta relativa del build WebGL
+          src="/Unity3/BlossomsOfPeace.html" // Ruta relativa del build WebGL
           width="100%" // Cambia el ancho si necesitas que no cubra toda la pantalla
           height="100%" // Cambia el alto si necesitas que no cubra toda la pantalla
           title="Unity WebGL Game"

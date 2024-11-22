@@ -32,10 +32,7 @@ const HomeDevelopment = () => {
                         className="w-full h-[400px] rounded-xl shadow-lg"
                         controls
                     >
-                        <source
-                            src={gameplayVideo}  // Usar la ruta correcta al video
-                            type="video/mp4"
-                        />
+                        <source src="/assets/RV.mp4" type="video/mp4" />
                         Your browser does not support the video tag.
                     </video>
                 </div>
