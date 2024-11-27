@@ -6,7 +6,7 @@ import profile2 from '../assets/Blossoms.png';
 import profile7 from '../assets/Home.png';
 import profile3 from '../assets/Amuleto.png';
 import profile4 from '../assets/Diseño.png';
-import profile5 from '../assets/contador.png';
+import profile9 from '../assets/Calvoduty.png';
 import profile6 from '../assets/videoreact.png';
 import profile8 from '../assets/Portfolio.png';
 
@@ -48,14 +48,14 @@ const Projects = () => {
           />
           <Card
             subtitle="Amuleto de Jade"
-            href={profile3}
+            href={profile1}
             link="/Amuleto"
             className="w-full md:w-80 h-auto"
           />
           <Card
             subtitle="Calvo Duty"
-            href={profile2}
-            link="/BlossomsOfPeace"
+            href={profile9}
+            link="/Calvo"
           />
         </div>
       ),

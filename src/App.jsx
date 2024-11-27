@@ -12,6 +12,7 @@ import BlossomsOfPeace from "./BlossomsOfPeace";
 import DriftUp from "./DriftUp";
 import Home from "./Home";
 import Amuleto from "./Amuleto";
+import Calvo from "./Calvo";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
         <Route path="/DriftUp" element={<DriftUp />} /> {/* Ruta para StormKitchen */}
         <Route path="/Home" element={<Home />} /> {/* Ruta para StormKitchen */}
         <Route path="/Amuleto" element={<Amuleto />} /> {/* Ruta para StormKitchen */}
+        <Route path="/Calvo" element={<Calvo />} /> {/* Ruta para StormKitchen */}
       </Routes>
     </Router>
   );
