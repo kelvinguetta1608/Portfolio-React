@@ -51,7 +51,7 @@ const About =()=>{
                             <span className='py-[1px] text-[16px] '>Adobe suite</span>
                         </div>
                     </div>
-                    <p className="lg:me-80 text-[18px] ">I am a seventh-semester Multimedia Engineering student at Universidad Autónoma de Occidente (UAO), with a strong background in developing interactive experiences. I specialize in creating 2D, 3D, Augmented Reality (AR), and Virtual Reality (VR) projects using Unity, integrating technology and creativity to deliver innovative solutions. Additionally, I have experience in web development and advanced proficiency with the Adobe suite, allowing me to design and produce high-quality visual and functional content. My passion lies in combining technology with design to create immersive and effective experiences.</p>
+                    <p className="lg:me-80 text-[18px] ">I am a eighth-semester Multimedia Engineering student at Universidad Autónoma de Occidente (UAO), with a strong background in developing interactive experiences. I specialize in creating 2D, 3D, Augmented Reality (AR), and Virtual Reality (VR) projects using Unity, integrating technology and creativity to deliver innovative solutions. Additionally, I have experience in web development and advanced proficiency with the Adobe suite, allowing me to design and produce high-quality visual and functional content. My passion lies in combining technology with design to create immersive and effective experiences.</p>
                 </div>
             </div>            
         </div>
