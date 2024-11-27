@@ -4,7 +4,7 @@ import Blossoms from "./Components/Blossoms"
 import Footer from "./Components/Footer";
 import AboutBlossoms from "./Components/AboutBlossoms";
 import BlossomsDevelopment from "./Components/BlossomsDevelopment";
-
+import Contact from "./Components/Contact";
 
 
 
@@ -17,6 +17,7 @@ function BlossomsOfPeace() {
       <AboutBlossoms/>
       <Blossoms/>
       <BlossomsDevelopment/>
+      <Contact/>
       <Footer/>
     </>
   )

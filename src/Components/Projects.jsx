@@ -48,7 +48,7 @@ const Projects = () => {
           />
           <Card
             subtitle="Amuleto de Jade"
-            href={profile1}
+            href={profile3}
             link="/Amuleto"
             className="w-full md:w-80 h-auto"
           />

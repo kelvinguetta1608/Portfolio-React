@@ -3,7 +3,7 @@ import Header from "./Components/Header"
 import Storm from "./Components/Storm"
 import Footer from "./Components/Footer";
 import AmuletoDevelopment from "./Components/AmuletoDevelopment";
-
+import Contact from "./Components/Contact";
 
 
 
@@ -14,6 +14,7 @@ function Home() {
     <>
       <Header/>
       <AmuletoDevelopment/>
+      <Contact/>
       <Footer/>
     </>
   )

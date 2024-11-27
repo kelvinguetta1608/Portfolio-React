@@ -3,7 +3,7 @@ import Header from "./Components/Header"
 import Storm from "./Components/Storm"
 import Footer from "./Components/Footer";
 import CalvoDevelopment from "./Components/CalvoDevelopment";
-
+import Contact from "./Components/Contact";
 
 
 
@@ -14,6 +14,7 @@ function Calvo() {
     <>
       <Header/>
       <CalvoDevelopment/>
+      <Contact/>
       <Footer/>
     </>
   )
