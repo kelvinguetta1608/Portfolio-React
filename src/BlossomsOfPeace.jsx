@@ -5,15 +5,19 @@ import Footer from "./Components/Footer";
 import AboutBlossoms from "./Components/AboutBlossoms";
 import BlossomsDevelopment from "./Components/BlossomsDevelopment";
 import Contact from "./Components/Contact";
-
+import { useEffect } from 'react';
 
 
 function BlossomsOfPeace() {
   
+  useEffect(() => {
+    window.scrollTo(0, 0); // Lleva el scroll a la parte superior
+  }, []);
 
   return (
     <>
       <Header/>
+      <div style={{ marginTop: '150px' }}></div>
       <AboutBlossoms/>
       <Blossoms/>
       <BlossomsDevelopment/>

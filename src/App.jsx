@@ -13,14 +13,20 @@ import DriftUp from "./DriftUp";
 import Home from "./Home";
 import Amuleto from "./Amuleto";
 import Calvo from "./Calvo";
+import { useEffect } from 'react';
 
 function App() {
+
+  useEffect(() => {
+    window.scrollTo(0, 0); // Lleva el scroll a la parte superior
+  }, []);
   return (
     <Router>
       <Routes>
         <Route path="/" element={
           <>
             <Header/>
+            <div style={{ marginTop: '150px' }}></div>
             <Banner/>
             <About/>
             <Skills/>

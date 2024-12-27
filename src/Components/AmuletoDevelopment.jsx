@@ -29,7 +29,7 @@ const AmuletoDevelopment = () => {
                 {/* YouTube video on the right */}
                 <div className="lg:w-[50%] flex justify-center">
                     <div className="w-full h-full">
-                        <YouTube videoId="3lwQ5kNF5PI" />
+                        <YouTube videoId="ULCu1GY_v8M" />
                     </div>
                 </div>
             </div>
