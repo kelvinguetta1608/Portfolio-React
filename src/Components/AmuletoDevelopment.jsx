@@ -5,31 +5,41 @@ const AmuletoDevelopment = () => {
     return (
         <div id="ProjectDevelopment" className="py-28 lg:px-44 px-4 text-white">
             <div className="flex lg:flex-row flex-col items-center justify-center gap-20">
-                {/* Text description on the left */}
+                {/* Text description */}
                 <div className="lg:w-[50%]">
                     <div className="text-2xl font-semibold mb-4">
                         <h2
                             className="text-5xl my-2 font-bold"
                             style={{ color: '#1484da' }}
                         >
-                            Amuleto de Jade
+                            La Maldición del Buziraco
                         </h2>
                     </div>
                     <p className="text-lg mb-6">
-                        Amuleto de Jade is a dark, desolate mystery game set in 1920s London, inspired by the works of H.P. Lovecraft. Players take on the role of an investigator following a cryptic letter from their friend Carter, who details his death after the theft of a jade amulet. This theft unleashes the Winged Hound, a malevolent entity that hunts the player, accompanied by minions like zombies and screamers. The story challenges players to unravel the mystery behind Carter's demise.
+                        La Maldición del Buziraco is a dark, desolate mystery game based on the legend of the Buziraco from the city of Cali. Players take on the role of an investigator who receives a message from Andrés Balanta, a local resident, informing them that the Buziraco has escaped from its prison at "El Cerro de las Tres Cruces." Andrés explains that the player must go to the Fraile Cuesta house to gather clues and figure out how to stop the Buziraco, a malevolent entity that hunts the player, accompanied by zombies and screamers.
                     </p>
                     <p className="text-lg mb-6">
-                        To progress, players must solve puzzles, interact with NPCs for crucial information, and recover the stolen amulet. The gameplay is designed to immerse players in a haunting atmosphere, combining investigation and survival elements. The final confrontation with the Winged Hound occurs in a cemetery, where the player must use their skills and resources to restore order and defeat the entity.
+                        To progress, players must solve puzzles, interact with NPCs for crucial information, and uncover how to stop the Buziraco. The game is designed to immerse players in an eerie atmosphere, combining investigation and survival elements. The final confrontation with the Buziraco takes place in a cemetery, where the player must use their skills and resources to restore order and defeat the entity.
                     </p>
                     <p className="text-lg">
-                        My role in the project was focused on programming the enemy logic, including zombies, screamers, and the Winged Hound—a fire-breathing flying entity. I also worked on their animations, ensuring they contributed to the eerie tone of the game. Additionally, I implemented NPC dialogues and developed some of the puzzles, enhancing the interactive storytelling experience.
+                        My role in the project focused on programming the enemy logic, including zombies, screamers, and the Buziraco, a fire-breathing flying entity. I also worked on their animations to enhance the game's dark atmosphere. Additionally, I implemented NPC dialogues and developed several of the puzzles, improving the interactive storytelling experience. I was also responsible for designing and implementing the HUD, which includes the health bar, damage effects, sanity bar, and the main menu and in-game menus.
                     </p>
                 </div>
 
-                {/* YouTube video on the right */}
-                <div className="lg:w-[50%] flex justify-center">
-                    <div className="w-full h-full">
-                        <YouTube videoId="ULCu1GY_v8M" />
+                {/* YouTube video */}
+                <div className="lg:w-[50%] w-full">
+                    <div className="relative pb-[56.25%] max-w-full mx-auto">
+                        <YouTube
+                            videoId="ULCu1GY_v8M"
+                            className="absolute top-0 left-0 w-full h-full"
+                            opts={{
+                                width: '100%',
+                                height: '100%',
+                                playerVars: {
+                                    autoplay: 0,
+                                },
+                            }}
+                        />
                     </div>
                 </div>
             </div>

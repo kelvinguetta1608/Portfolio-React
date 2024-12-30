@@ -26,7 +26,6 @@ function App() {
         <Route path="/" element={
           <>
             <Header/>
-            <div style={{ marginTop: '150px' }}></div>
             <Banner/>
             <About/>
             <Skills/>
@@ -42,6 +41,7 @@ function App() {
         <Route path="/Home" element={<Home />} /> {/* Ruta para StormKitchen */}
         <Route path="/Amuleto" element={<Amuleto />} /> {/* Ruta para StormKitchen */}
         <Route path="/Calvo" element={<Calvo />} /> {/* Ruta para StormKitchen */}
+        
       </Routes>
     </Router>
   );

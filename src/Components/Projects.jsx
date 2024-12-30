@@ -1,107 +1,78 @@
 import { useState } from 'react';
-import { Link } from 'react-router-dom';  // Asegúrate de importar Link
+import { Link } from 'react-router-dom';
 import profile from '../assets/StormInTheKitchen.png';
 import profile1 from '../assets/Drift.png';
 import profile2 from '../assets/Blossoms.png';
 import profile7 from '../assets/Home.png';
-import profile3 from '../assets/Amuleto.png';
+import profile3 from '../assets/PendonBuziraco.png';
 import profile4 from '../assets/Diseño.png';
 import profile9 from '../assets/Calvoduty.png';
 import profile6 from '../assets/videoreact.png';
 import profile8 from '../assets/Portfolio.png';
 
 const Projects = () => {
-  const [activeTab, setActiveTab] = useState(0);
+  const [currentGroupIndex, setCurrentGroupIndex] = useState(0);
 
-  const tabData = [
-    {
-      label: 'Game Jams',
-      content: (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-24">
-          <Card
-            subtitle="Storm In The Kitchen"
-            href={profile}
-            link="/StormKitchen"  // Ruta interna a StormKitchen
-          />
-          <Card
-            subtitle="Drift Up"
-            href={profile1}
-            link="/DriftUp"
-          />
-          <Card
-            subtitle="Blossoms of Peace"
-            href={profile2}
-            link="/BlossomsOfPeace"
-          />
-        </div>
-      ),
-    },
-    {
-      label: 'Interactive Experiences',
-      content: (
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-24">
-          <Card
-            subtitle="UAO Vision Home"
-            href={profile7}
-            link="/Home"
-            className="w-full md:w-80 h-auto"
-          />
-          <Card
-            subtitle="Amuleto de Jade"
-            href={profile3}
-            link="/Amuleto"
-            className="w-full md:w-80 h-auto"
-          />
-          <Card
-            subtitle="Calvo Duty"
-            href={profile9}
-            link="/Calvo"
-          />
-        </div>
-      ),
-    },
-    {
-      label: 'Digital Creation & Web',
-      content: (
-        <div className="max-w-3xl mx-auto p-2">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <Card
-              subtitle="Simple Web Portfolio"
-              href={profile8}
-              link="https://github.com/kelvinguetta1608/Parcial"
-              className="w-full md:w-80 h-auto"
-            />
-            <Card
-              subtitle="Adobe Suite Design"
-              href={profile4}
-              link="https://www.behance.net/kevinvelasco5"
-              className="w-full md:w-80 h-auto"
-            />
-          </div>
-        </div>
-      ),
-    },
+  const projects = [
+    { subtitle: 'Storm In The Kitchen', href: profile, link: '/StormKitchen' },
+    { subtitle: 'Drift Up', href: profile1, link: '/DriftUp' },
+    { subtitle: 'Blossoms of Peace', href: profile2, link: '/BlossomsOfPeace' },
+    { subtitle: 'UAO Vision Home', href: profile7, link: '/Home' },
+    { subtitle: 'Amuleto de Jade', href: profile3, link: '/Amuleto' },
+    { subtitle: 'Calvo Duty', href: profile9, link: '/Calvo' },
+    { subtitle: 'Simple Web Portfolio', href: profile8, link: 'https://github.com/kelvinguetta1608/Parcial' },
+    { subtitle: 'Adobe Suite Design', href: profile4, link: 'https://www.behance.net/kevinvelasco5' },
   ];
+
+  const itemsPerGroup = 3; // Número de proyectos visibles a la vez
+  const totalGroups = Math.ceil(projects.length / itemsPerGroup);
+
+  const handleNext = () => {
+    setCurrentGroupIndex((prevIndex) => (prevIndex + 1) % totalGroups); // Ir al siguiente grupo (loop infinito)
+  };
+
+  const handlePrevious = () => {
+    setCurrentGroupIndex((prevIndex) => (prevIndex - 1 + totalGroups) % totalGroups); // Ir al grupo anterior (loop infinito)
+  };
+
+  const currentGroup = projects.slice(
+    currentGroupIndex * itemsPerGroup,
+    currentGroupIndex * itemsPerGroup + itemsPerGroup
+  );
 
   return (
     <div className="text-white bg-black lg:p-44 p-4" id="Projects">
       <h2 className="text-4xl text-white font-bold mb-10 text-center">Projects</h2>
 
-      <div className="flex justify-center space-x-4 mb-10">
-        {tabData.map((tab, index) => (
-          <button
-            key={index}
-            className={`px-4 py-2 rounded-t-lg text-[17px] font-bold transition-all duration-300 
-              ${activeTab === index ? 'bg-gray-900 text-[#1484da]' : 'bg-gray-900 text-[#1484da] hover:bg-gray-700'}`}
-            onClick={() => setActiveTab(index)}
-          >
-            {tab.label}
-          </button>
-        ))}
+      {/* Controles de navegación */}
+      <div className="flex justify-between items-center mb-10">
+        <button
+          onClick={handlePrevious}
+          className="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-500"
+        >
+          ←
+        </button>
+        <p className="text-center text-[#1484da] font-bold">
+          {currentGroupIndex + 1} / {totalGroups}
+        </p>
+        <button
+          onClick={handleNext}
+          className="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-500"
+        >
+          →
+        </button>
       </div>
 
-      <div className="p-4 border-2 border-[#1484da] rounded-lg">
-        {tabData[activeTab].content}
+      {/* Proyectos visibles */}
+      <div className="grid grid-cols-1 md:grid-cols-3 gap-24">
+        {currentGroup.map((project, index) => (
+          <Card
+            key={index}
+            subtitle={project.subtitle}
+            href={project.href}
+            link={project.link}
+          />
+        ))}
       </div>
     </div>
   );
@@ -109,7 +80,7 @@ const Projects = () => {
 
 // Componente Card
 const Card = ({ subtitle, href, link }) => {
-  const isExternalLink = link.startsWith('http'); // Verifica si el enlace es externo
+  const isExternalLink = link.startsWith('http');
 
   return (
     <div className="bg-gray-900 rounded-lg shadow-lg overflow-hidden transition-transform duration-300 transform hover:scale-105 cursor-pointer">

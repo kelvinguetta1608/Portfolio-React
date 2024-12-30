@@ -29,9 +29,19 @@ const StormDevelopment = () => {
                 </div>
 
                 {/* Video de YouTube a la derecha */}
-                <div className="lg:w-[50%] flex justify-center">
-                    <div className="w-full h-full">
-                        <YouTube videoId="jC2i6Xgx6Y4"  />
+                <div className="lg:w-[50%] w-full">
+                    <div className="relative pb-[56.25%] max-w-full mx-auto">
+                        <YouTube
+                            videoId="jC2i6Xgx6Y4"
+                            className="absolute top-0 left-0 w-full h-full"
+                            opts={{
+                                width: '100%',
+                                height: '100%',
+                                playerVars: {
+                                    autoplay: 0,
+                                },
+                            }}
+                        />
                     </div>
                 </div>
             </div>

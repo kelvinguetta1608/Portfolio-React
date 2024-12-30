@@ -61,8 +61,15 @@ const Banner = () => {
             <h2 id='title' className="text-5xl my-2 font-bold" style={{ color: '#1484da' }}>Kevin Andres Velasco Perez</h2>
             <div  className="text-3xl my-2 font-bold" id="typewriter"></div>
             <div id="intro-slider" className="flex gap-2 justify-center">
-            <button className="px-[20px] py-[5px] rounded mt-6 border border-[#1484da] transition-all duration-700 ease-in-out hover:bg-[#1484da] ">Download</button>
-            <button className="px-[20px] py-[5px] rounded mt-6 bg-[#1484da] transition-all duration-700 ease-in-out hover:bg-transparent">About Me</button>
+            <button className="px-[20px] py-[5px] rounded mt-6 border border-[#1484da] transition-all duration-700 ease-in-out hover:bg-[#1484da] ">
+                
+                <a href="/KevinAndresVelascoPerez-CV.pdf"
+                download="Kevin_Andres_Velasco_Perez_CV.pdf"
+                >
+                    Download CV
+                </a>
+            </button>
+            
             </div>
             <div className="text-white flex lg:flex-row flex-col lg:justify-around items-center">
                 <div className="flex gap-2 lg:flex-col justify-center mt-10">

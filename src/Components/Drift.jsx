@@ -49,6 +49,8 @@ const Drift = () => {
   return (
     <div ref={comp} id="Home" className="text-center pt-10 lg:w-[100%]">
       {/* Aquí está el iframe del juego de Unity */}
+
+      
       <div className="w-full h-[70vh] flex justify-center items-center mt-10">
         <iframe
           src="/Unity2/Drift.html" // Ruta relativa del build WebGL

@@ -27,9 +27,19 @@ const CalvoDevelopment = () => {
                 </div>
 
                 {/* YouTube video on the right */}
-                <div className="lg:w-[50%] flex justify-center">
-                    <div className="w-full h-full">
-                        <YouTube videoId="akv3F6uJ-A8" />
+                <div className="lg:w-[50%] w-full">
+                    <div className="relative pb-[56.25%] max-w-full mx-auto">
+                        <YouTube
+                            videoId="akv3F6uJ-A8"
+                            className="absolute top-0 left-0 w-full h-full"
+                            opts={{
+                                width: '100%',
+                                height: '100%',
+                                playerVars: {
+                                    autoplay: 0,
+                                },
+                            }}
+                        />
                     </div>
                 </div>
             </div>

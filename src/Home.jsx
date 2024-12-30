@@ -1,5 +1,5 @@
 import AboutStorm from "./Components/AboutStorm"
-import Header from "./Components/Header"
+import HeaderProjects from "./Components/HeaderProjects"
 import Storm from "./Components/Storm"
 import Footer from "./Components/Footer";
 import Contact from "./Components/Contact";
@@ -15,7 +15,7 @@ function Home() {
 
   return (
     <>
-      <Header/>
+      <HeaderProjects/>
       <div style={{ marginTop: '100px' }}></div>
       <HomeDevelopment/>
       <Contact/>

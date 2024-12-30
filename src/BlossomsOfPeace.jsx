@@ -1,5 +1,5 @@
 
-import Header from "./Components/Header"
+import HeaderProjects from "./Components/HeaderProjects"
 import Blossoms from "./Components/Blossoms"
 import Footer from "./Components/Footer";
 import AboutBlossoms from "./Components/AboutBlossoms";
@@ -16,7 +16,7 @@ function BlossomsOfPeace() {
 
   return (
     <>
-      <Header/>
+      <HeaderProjects/>
       <div style={{ marginTop: '150px' }}></div>
       <AboutBlossoms/>
       <Blossoms/>
