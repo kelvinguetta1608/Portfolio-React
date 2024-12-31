@@ -19,7 +19,7 @@ function StormKitchen() {
       <HeaderProjects/>
       <div style={{ marginTop: '100px' }}></div>
       <AboutStorm/>
-      <Storm/>
+      
       <StormDevelopment/>
       <Contact/>
       <Footer/>

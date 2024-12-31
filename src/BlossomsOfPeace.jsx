@@ -17,9 +17,9 @@ function BlossomsOfPeace() {
   return (
     <>
       <HeaderProjects/>
-      <div style={{ marginTop: '150px' }}></div>
+      <div style={{ marginTop: '100px' }}></div>
       <AboutBlossoms/>
-      <Blossoms/>
+      
       <BlossomsDevelopment/>
       <Contact/>
       <Footer/>

@@ -22,7 +22,8 @@ const About =()=>{
                     scrub:1,
                 },
             });
-            t1.from("#intro-slider", { opacity:0,x:-100, duration:1});
+            t1.from("#intro-slider", { opacity: 0.8, x: -100, duration: 0.6 });
+
             return t1;
         },comp)
         return ()=> ctx.revert();

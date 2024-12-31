@@ -7,20 +7,21 @@ import profile7 from '../assets/Home.png';
 import profile3 from '../assets/PendonBuziraco.png';
 import profile4 from '../assets/Diseño.png';
 import profile9 from '../assets/Calvoduty.png';
-import profile6 from '../assets/videoreact.png';
+import profile6 from '../assets/Ecommerce.png';
 import profile8 from '../assets/Portfolio.png';
 
 const Projects = () => {
   const [currentGroupIndex, setCurrentGroupIndex] = useState(0);
 
   const projects = [
+    { subtitle: 'UAO Vision Home', href: profile7, link: '/Home' },
+    { subtitle: 'La Maldición Del Buziraco', href: profile3, link: '/Amuleto' },
+    { subtitle: 'Calvo Duty', href: profile9, link: '/Calvo' },
     { subtitle: 'Storm In The Kitchen', href: profile, link: '/StormKitchen' },
     { subtitle: 'Drift Up', href: profile1, link: '/DriftUp' },
     { subtitle: 'Blossoms of Peace', href: profile2, link: '/BlossomsOfPeace' },
-    { subtitle: 'UAO Vision Home', href: profile7, link: '/Home' },
-    { subtitle: 'Amuleto de Jade', href: profile3, link: '/Amuleto' },
-    { subtitle: 'Calvo Duty', href: profile9, link: '/Calvo' },
     { subtitle: 'Simple Web Portfolio', href: profile8, link: 'https://github.com/kelvinguetta1608/Parcial' },
+    { subtitle: 'Ecommerce Website', href: profile6, link: 'https://ecommercefinalweb.vercel.app/' },
     { subtitle: 'Adobe Suite Design', href: profile4, link: 'https://www.behance.net/kevinvelasco5' },
   ];
 
@@ -48,7 +49,7 @@ const Projects = () => {
       <div className="flex justify-between items-center mb-10">
         <button
           onClick={handlePrevious}
-          className="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-500"
+          className="px-4 py-2 rounded-lg border border-[#1484da] bg-[#1484da] text-white transition-all duration-700 ease-in-out hover:bg-transparent hover:text-[#1484da]"
         >
           ←
         </button>
@@ -57,11 +58,14 @@ const Projects = () => {
         </p>
         <button
           onClick={handleNext}
-          className="bg-gray-700 text-white px-4 py-2 rounded-lg hover:bg-gray-500"
+          className="px-4 py-2 rounded-lg border border-[#1484da] bg-[#1484da] text-white transition-all duration-700 ease-in-out hover:bg-transparent hover:text-[#1484da]"
         >
           →
         </button>
       </div>
+
+
+
 
       {/* Proyectos visibles */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-24">
