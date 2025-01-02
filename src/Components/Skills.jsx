@@ -74,7 +74,7 @@ const Skills = () => {
                         <h3 className="mb-1 text-sm font-semibold leading-none text-[#1484da]">Hard</h3>
                         <h3 className="text-lg font-semibold text-white my-2">Web Development</h3>
                         <p className="mb-4 text-base font-normal text-gray-400">
-                            Creation of websites and web applications using technologies like HTML, CSS, JavaScript, and React.
+                            Creation of websites and web applications using technologies like HTML, CSS, JavaScript, React, Tailwind, and Firebase.
                         </p>
 
                         <h3 className="mb-1 text-sm font-semibold leading-none text-[#1484da]">Hard</h3>

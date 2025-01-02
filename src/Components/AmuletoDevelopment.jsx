@@ -2,6 +2,10 @@ import React from 'react';
 import YouTube from 'react-youtube';
 
 const AmuletoDevelopment = () => {
+    const handlePlay = () => {
+        window.open('https://arthurxs.itch.io/la-maldicion-del-buziraco', '_blank');
+    };
+
     return (
         <div id="ProjectDevelopment" className="py-28 lg:px-44 px-4 text-white">
             <div className="flex lg:flex-row flex-col items-center justify-center gap-20">
@@ -42,6 +46,16 @@ const AmuletoDevelopment = () => {
                         />
                     </div>
                 </div>
+            </div>
+
+            {/* Botón centrado debajo del texto y el video */}
+            <div className="flex justify-center mt-10">
+                <button
+                    onClick={handlePlay}
+                    className="px-4 py-2 text-xl rounded-lg bg-[#1484da] text-white transition-all duration-700 ease-in-out hover:bg-transparent hover:text-[#1484da] border border-[#1484da]"
+                >
+                    Play Me
+                </button>
             </div>
         </div>
     );

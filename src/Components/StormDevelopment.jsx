@@ -2,7 +2,9 @@ import React from 'react';
 import YouTube from 'react-youtube';
 
 const StormDevelopment = () => {
-    
+    const handlePlay = () => {
+        window.open('https://example.com/play', '_blank');
+    };
 
     return (
         <div id="ProjectDevelopment" className="py-28 lg:px-44 px-4 text-white">
@@ -44,6 +46,16 @@ const StormDevelopment = () => {
                         />
                     </div>
                 </div>
+            </div>
+
+            {/* Botón centrado debajo del texto y el video */}
+            <div className="flex justify-center mt-10">
+                <button
+                    onClick={handlePlay}
+                    className="px-[20px] py-[6px] text-xl rounded mt-6 bg-[#1484da] mb-10 hover:border transition-all duration-700 ease-in-out hover:bg-transparent border-[#1484da]"
+                >
+                    Play Me
+                </button>
             </div>
         </div>
     );

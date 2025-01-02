@@ -49,7 +49,7 @@ const Projects = () => {
       <div className="flex justify-between items-center mb-10">
         <button
           onClick={handlePrevious}
-          className="px-4 py-2 rounded-lg border border-[#1484da] bg-[#1484da] text-white transition-all duration-700 ease-in-out hover:bg-transparent hover:text-[#1484da]"
+          className="px-[20px] py-[6px] text-xl rounded mt-6 bg-[#1484da] mb-10 hover:border transition-all duration-700 ease-in-out hover:bg-transparent border-[#1484da]"
         >
           ←
         </button>
@@ -58,8 +58,8 @@ const Projects = () => {
         </p>
         <button
           onClick={handleNext}
-          className="px-4 py-2 rounded-lg border border-[#1484da] bg-[#1484da] text-white transition-all duration-700 ease-in-out hover:bg-transparent hover:text-[#1484da]"
-        >
+          className="px-[20px] py-[6px] text-xl rounded mt-6 bg-[#1484da] mb-10 hover:border transition-all duration-700 ease-in-out hover:bg-transparent border-[#1484da]"
+        >            
           →
         </button>
       </div>
