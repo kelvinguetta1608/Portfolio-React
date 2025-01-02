@@ -7,7 +7,7 @@ const Footer =()=>{
                 </div>
                 <div className=" flex gap-5 my-2 justify-center">
                     <a className="hover:underline" href="https://github.com/kelvinguetta1608">Github</a>
-                    <a className="hover:underline" href="https://kevinvelasco.itch.io/">Itch.io</a>
+                    <a className="hover:underline" href="https://itch.io/profile/kevinvelasco">Itch.io</a>
                     <a className="hover:underline" href="https://www.linkedin.com/in/kevin-velasco-91a759295/?trk=opento_sprofile_details">Linkedin</a>
                 </div>
             </div>

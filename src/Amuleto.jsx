@@ -1,4 +1,4 @@
-import AboutStorm from "./Components/AboutStorm"
+import AboutBuziraco from "./Components/AboutBuziraco"
 import HeaderProjects from "./Components/HeaderProjects"
 import Storm from "./Components/Storm"
 import Footer from "./Components/Footer";
@@ -16,6 +16,7 @@ function Home() {
     <>
       <HeaderProjects/>
       <div style={{ marginTop: '100px' }}></div>
+      <AboutBuziraco/>
       <AmuletoDevelopment/>
       <Contact/>
       <Footer/>

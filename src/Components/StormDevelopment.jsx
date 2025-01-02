@@ -3,7 +3,7 @@ import YouTube from 'react-youtube';
 
 const StormDevelopment = () => {
     const handlePlay = () => {
-        window.open('https://example.com/play', '_blank');
+        window.open('https://kevinvelasco.itch.io/storm-in-the-kitchen', '_blank');
     };
 
     return (
@@ -52,7 +52,7 @@ const StormDevelopment = () => {
             <div className="flex justify-center mt-10">
                 <button
                     onClick={handlePlay}
-                    className="px-[20px] py-[6px] text-xl rounded mt-6 bg-[#1484da] mb-10 hover:border transition-all duration-700 ease-in-out hover:bg-transparent border-[#1484da]"
+                    className="px-4 py-2 text-xl rounded-lg bg-[#1484da] text-white transition-all duration-700 ease-in-out hover:bg-transparent hover:text-[#1484da] border border-[#1484da]"
                 >
                     Play Me
                 </button>

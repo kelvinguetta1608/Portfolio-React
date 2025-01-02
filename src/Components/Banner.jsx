@@ -2,7 +2,7 @@ import React, { useEffect, useLayoutEffect, useRef } from 'react';
 import { FiGithub } from 'react-icons/fi';
 import { FaInstagram, FaItchIo, FaLinkedinIn } from 'react-icons/fa6';
 import Typewriter from 'typewriter-effect/dist/core';
-import profile from '../assets/Captura.png'
+import profile from '../assets/KevinVelasco.png'
 import { LuMouse } from 'react-icons/lu';
 import { ScrollTrigger } from 'gsap/all';
 import gsap from 'gsap';
@@ -61,7 +61,7 @@ const Banner = () => {
             <h2 id='title' className="text-5xl my-2 font-bold" style={{ color: '#1484da' }}>Kevin Andres Velasco Perez</h2>
             <div  className="text-3xl my-2 font-bold" id="typewriter"></div>
             <div id="intro-slider" className="flex gap-2 justify-center">
-            <button className="px-[20px] py-[5px] rounded mt-6 border border-[#1484da] transition-all duration-700 ease-in-out hover:bg-[#1484da] ">
+            <button className="px-[20px] py-[5px] rounded mt-6 border border-[#1484da] bg-[#1484da] text-white transition-all duration-700 ease-in-out hover:bg-transparent hover:text-[#1484da]">
                 
                 <a href="/KevinAndresVelascoPerez-CV.pdf"
                 download="Kevin_Andres_Velasco_Perez_CV.pdf"

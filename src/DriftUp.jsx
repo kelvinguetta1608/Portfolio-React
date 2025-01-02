@@ -1,6 +1,6 @@
 
 import HeaderProjects from "./Components/HeaderProjects"
-import Drift from "./Components/Drift"
+import DoggyDevelopment from "./Components/DoggyDevelopment"
 import Footer from "./Components/Footer";
 import AboutDrift from "./Components/AboutDrift";
 import Contact from "./Components/Contact";
@@ -18,7 +18,7 @@ function DriftUp() {
       <HeaderProjects/>
       <div style={{ marginTop: '100px' }}></div>
       <AboutDrift/>
-      <Drift/>
+      <DoggyDevelopment/>
       <Contact/>
       <Footer/>
     </>

@@ -83,7 +83,7 @@ const Contact = () => {
                 <div className="flex justify-center">
                     <button
                         type="submit"
-                        className="px-[20px] py-[6px] text-xl rounded mt-6 bg-[#1484da] mb-10 hover:border transition-all duration-700 ease-in-out hover:bg-transparent border-[#1484da]"
+                        className="px-[20px] py-[5px] rounded mt-6 border border-[#1484da] bg-[#1484da] text-white transition-all duration-700 ease-in-out hover:bg-transparent hover:text-[#1484da]"
                     >
                         Send
                     </button>

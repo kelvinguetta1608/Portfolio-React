@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import profile from '../assets/StormInTheKitchen.png';
-import profile1 from '../assets/Drift.png';
+import profile1 from '../assets/Doggy.jpg';
 import profile2 from '../assets/Blossoms.png';
 import profile7 from '../assets/Home.png';
 import profile3 from '../assets/PendonBuziraco.png';
@@ -18,7 +18,7 @@ const Projects = () => {
     { subtitle: 'La Maldición Del Buziraco', href: profile3, link: '/Amuleto' },
     { subtitle: 'Calvo Duty', href: profile9, link: '/Calvo' },
     { subtitle: 'Storm In The Kitchen', href: profile, link: '/StormKitchen' },
-    { subtitle: 'Drift Up', href: profile1, link: '/DriftUp' },
+    { subtitle: 'Doggy Park', href: profile1, link: '/DriftUp' },
     { subtitle: 'Blossoms of Peace', href: profile2, link: '/BlossomsOfPeace' },
     { subtitle: 'Simple Web Portfolio', href: profile8, link: 'https://github.com/kelvinguetta1608/Parcial' },
     { subtitle: 'Ecommerce Website', href: profile6, link: 'https://ecommercefinalweb.vercel.app/' },
