@@ -12,7 +12,7 @@ import gsap from 'gsap';
 const Banner = () => {
     useEffect(() => {
         const typewriter = new Typewriter('#typewriter', {
-            strings: [' I am a multimedia engineer', 'I am a Game Developer', ' I am a Web Developer', , 'I am a Designer'],
+            strings: [' I am a Multimedia Engineer', 'I am a Game Developer', ' I am a Web Developer', , 'I am a UI/UX Designer'],
             autoStart: true,
             loop: true,
             

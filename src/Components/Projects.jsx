@@ -8,7 +8,7 @@ import profile3 from '../assets/PendonBuziraco.png';
 import profile4 from '../assets/Diseño.png';
 import profile9 from '../assets/Calvoduty.png';
 import profile6 from '../assets/Ecommerce.png';
-import profile8 from '../assets/Portfolio.png';
+import profile8 from '../assets/PDiabetApp.png';
 
 const Projects = () => {
   const [currentGroupIndex, setCurrentGroupIndex] = useState(0);
@@ -20,7 +20,7 @@ const Projects = () => {
     { subtitle: 'Storm In The Kitchen', href: profile, link: '/StormKitchen' },
     { subtitle: 'Doggy Park', href: profile1, link: '/DriftUp' },
     { subtitle: 'Blossoms of Peace', href: profile2, link: '/BlossomsOfPeace' },
-    { subtitle: 'Simple Web Portfolio', href: profile8, link: 'https://github.com/kelvinguetta1608/Parcial' },
+    { subtitle: 'Figma DiabetApp', href: profile8, link: 'https://www.figma.com/proto/aUutiUZ7A8yQmvt5Jmq8zi/DiabetApp?node-id=1-287&t=eokhqjEjTgMJBHOv-0&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A287' },
     { subtitle: 'Ecommerce Website', href: profile6, link: 'https://ecommercefinalweb.vercel.app/' },
     { subtitle: 'Adobe Suite Design', href: profile4, link: 'https://www.behance.net/kevinvelasco5' },
   ];
@@ -47,21 +47,20 @@ const Projects = () => {
 
       {/* Controles de navegación */}
       <div className="flex justify-between items-center mb-10">
-        <button
-          onClick={handlePrevious}
-          className="px-[20px] py-[6px] text-xl rounded mt-6 bg-[#1484da] mb-10 hover:border transition-all duration-700 ease-in-out hover:bg-transparent border-[#1484da]"
-        >
-          ←
-        </button>
-        <p className="text-center text-[#1484da] font-bold">
-          {currentGroupIndex + 1} / {totalGroups}
-        </p>
-        <button
-          onClick={handleNext}
-          className="px-[20px] py-[6px] text-xl rounded mt-6 bg-[#1484da] mb-10 hover:border transition-all duration-700 ease-in-out hover:bg-transparent border-[#1484da]"
-        >            
-          →
-        </button>
+      <button
+        onClick={handlePrevious}
+        className="px-[20px] py-[6px] text-3xl rounded mt-6 bg-[#1484da] mb-10 hover:border transition-all duration-300 ease-in-out hover:bg-transparent border-[#1484da] animate-slide-left"
+      >
+        ←
+      </button>
+
+      <button
+        onClick={handleNext}
+        className="px-[20px] py-[6px] text-3xl rounded mt-6 bg-[#1484da] mb-10 hover:border transition-all duration-300 ease-in-out hover:bg-transparent border-[#1484da] animate-slide-right"
+      >
+        →
+      </button>
+
       </div>
 
 

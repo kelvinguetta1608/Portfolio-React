@@ -2,6 +2,7 @@ import profile from '../assets/Captura2.png'
 import { FaUnity } from "react-icons/fa6";
 import { SiAdobe } from "react-icons/si";
 import { TfiHtml5 } from "react-icons/tfi";
+import { FaFigma } from "react-icons/fa";
 import { ScrollTrigger } from 'gsap/all';
 import gsap from 'gsap';
 import React, { useLayoutEffect, useRef } from 'react';
@@ -42,6 +43,11 @@ const About =()=>{
                             <span className='py-[1px] text-[16px] '>Unity Developer</span>
                         </div>
                         <div className='bg-gray-900 p-[10px] rounded-xl flex flex-col items-center justify-center'>
+                            <FaFigma className='text-[20px] text-center m-[6px]'/>
+                            <h2 className='text-[17px] font-bold text-[#1484da]'>Experience</h2>
+                            <span className='py-[1px] text-[16px] '>UI/UX Designer</span>
+                        </div>
+                        <div className='bg-gray-900 p-[10px] rounded-xl flex flex-col items-center justify-center'>
                             <TfiHtml5 className='text-[20px] text-center m-[6px]'/>
                             <h2 className='text-[17px] font-bold text-[#1484da]'>Experience</h2>
                             <span className='py-[1px] text-[16px] '>Web Developer</span>
@@ -51,8 +57,12 @@ const About =()=>{
                             <h2 className='text-[17px] font-bold text-[#1484da]'>Experience</h2>
                             <span className='py-[1px] text-[16px] '>Adobe suite</span>
                         </div>
+                        
                     </div>
-                    <p className="lg:me-80 text-[18px] ">I am a eighth-semester Multimedia Engineering student at Universidad Autónoma de Occidente (UAO), with a strong background in developing interactive experiences. I specialize in creating 2D, 3D, Augmented Reality (AR), and Virtual Reality (VR) projects using Unity, integrating technology and creativity to deliver innovative solutions. Additionally, I have experience in web development and advanced proficiency with the Adobe suite, allowing me to design and produce high-quality visual and functional content. My passion lies in combining technology with design to create immersive and effective experiences.</p>
+                    <p className="lg:me-80 text-[18px]">
+                        I am an eighth-semester Multimedia Engineering student at Universidad Autónoma de Occidente (UAO), with a strong background in developing interactive experiences. I specialize in creating 2D, 3D, Augmented Reality (AR), and Virtual Reality (VR) projects using Unity, and have a solid experience in UI/UX design using tools like Figma. I integrate technology and creativity to deliver innovative solutions. Additionally, I have experience in web development and advanced proficiency with the Adobe suite, allowing me to design and produce high-quality visual and functional content. My passion lies in combining technology with design to create immersive and effective experiences.
+                    </p>
+
                 </div>
             </div>            
         </div>
