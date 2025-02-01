@@ -1,7 +1,7 @@
 import profile from '../assets/Captura2.png'
 import { FaUnity } from "react-icons/fa6";
 import { SiAdobe } from "react-icons/si";
-import { TfiHtml5 } from "react-icons/tfi";
+import { FaReact } from "react-icons/fa";
 import { FaFigma } from "react-icons/fa";
 import { ScrollTrigger } from 'gsap/all';
 import gsap from 'gsap';
@@ -43,19 +43,17 @@ const About =()=>{
                             <span className='py-[1px] text-[16px] '>Unity Developer</span>
                         </div>
                         <div className='bg-gray-900 p-[10px] rounded-xl flex flex-col items-center justify-center'>
-                            <FaFigma className='text-[20px] text-center m-[6px]'/>
+                        <div className="flex justify-center gap-[10px]">
+                                <FaFigma className='text-[20px] m-[6px]' />
+                                <SiAdobe className='text-[20px] m-[6px]' />
+                            </div>
                             <h2 className='text-[17px] font-bold text-[#1484da]'>Experience</h2>
                             <span className='py-[1px] text-[16px] '>UI/UX Designer</span>
                         </div>
                         <div className='bg-gray-900 p-[10px] rounded-xl flex flex-col items-center justify-center'>
-                            <TfiHtml5 className='text-[20px] text-center m-[6px]'/>
+                            <FaReact className='text-[20px] text-center m-[6px]'/>
                             <h2 className='text-[17px] font-bold text-[#1484da]'>Experience</h2>
                             <span className='py-[1px] text-[16px] '>Web Developer</span>
-                        </div>
-                        <div className='bg-gray-900 p-[10px] rounded-xl flex flex-col items-center justify-center'>
-                            <SiAdobe className='text-[20px] text-center m-[6px]'/>
-                            <h2 className='text-[17px] font-bold text-[#1484da]'>Experience</h2>
-                            <span className='py-[1px] text-[16px] '>Adobe suite</span>
                         </div>
                         
                     </div>
