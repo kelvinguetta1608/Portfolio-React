@@ -2,7 +2,7 @@ import React, { useEffect, useLayoutEffect, useRef } from 'react';
 import { FiGithub } from 'react-icons/fi';
 import { FaInstagram, FaItchIo, FaLinkedinIn } from 'react-icons/fa6';
 import Typewriter from 'typewriter-effect/dist/core';
-import profile from '../assets/KevinVelasco.png'
+import profile from '../assets/KV.png'
 import { LuMouse } from 'react-icons/lu';
 import { ScrollTrigger } from 'gsap/all';
 import gsap from 'gsap';

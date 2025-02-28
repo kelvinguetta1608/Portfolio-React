@@ -1,4 +1,4 @@
-import profile from '../assets/Captura2.png'
+import profile from '../assets/KevinVelasco.png'
 import { FaUnity } from "react-icons/fa6";
 import { SiAdobe } from "react-icons/si";
 import { FaReact } from "react-icons/fa";
